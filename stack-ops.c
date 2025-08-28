@@ -21,7 +21,7 @@ int main()
                     stack[++top] = val;
                     printf("Pushed %d onto the stack:\n",val);
                 }
-                else if (top == n - 1)
+                else 
                 {
                     printf("overflow\n");
                 }
@@ -34,7 +34,7 @@ int main()
                     int delelm = stack[top--];
                     printf("Popped element %d\n",delelm);
                 }
-                else if(top == -1)
+                else
                 {
                     printf("Underflow\n");
                 }
@@ -56,9 +56,12 @@ int main()
                 {
                     printf("Stack is empty\n");
                 }
-                for(i = top;i>=0;i--)
+                else
                 {
-                    printf("%d\n",stack[i]);
+                    for(i = top;i>=0;i--)
+                    {
+                        printf("%d\n",stack[i]);
+                    }
                 }
                 break;
                 
