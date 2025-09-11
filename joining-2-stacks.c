@@ -2,7 +2,7 @@
 #define n 6
 
 int stack[n];
-int top1 = -1,top2 = n - 1;
+int top1 = -1,top2 = n;
 
 void push1(int val) 
 {
@@ -108,6 +108,6 @@ int main()
             default:
                 printf("Invalid choice, please try again\n");
         }
-    }while(ch != 5);
+    }while(ch != 6);
     return 0;
 }
